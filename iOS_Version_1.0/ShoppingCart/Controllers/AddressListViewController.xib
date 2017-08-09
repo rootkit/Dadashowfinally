@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressListViewController">
+            <connections>
+                <outlet property="addBtn" destination="OfP-Gr-qXU" id="gEl-k5-LLT"/>
+                <outlet property="bottomView" destination="uyt-HQ-4v4" id="gGh-Sb-gpw"/>
+                <outlet property="tableView" destination="0Qm-aN-EVV" id="5HI-hK-p0w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyt-HQ-4v4">
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfP-Gr-qXU">
+                            <rect key="frame" x="24" y="27.5" width="327" height="45"/>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.36078431370000003" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="b2r-iX-Zj4"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="1" height="1"/>
+                            <state key="normal" title="新增地址" image="ico_add">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" red="0.98823529409999999" green="0.36078431370000003" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="newAddressAction:" destination="-1" eventType="touchUpInside" id="bTm-8d-1E5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="1IV-dM-cPd"/>
+                        <constraint firstItem="OfP-Gr-qXU" firstAttribute="leading" secondItem="uyt-HQ-4v4" secondAttribute="leading" constant="24" id="IPo-HJ-vjk"/>
+                        <constraint firstAttribute="trailing" secondItem="OfP-Gr-qXU" secondAttribute="trailing" constant="24" id="Idw-Mg-2yQ"/>
+                        <constraint firstItem="OfP-Gr-qXU" firstAttribute="centerY" secondItem="uyt-HQ-4v4" secondAttribute="centerY" id="kms-8p-uZu"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Qm-aN-EVV">
+                    <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uyt-HQ-4v4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BAH-18-pAE"/>
+                <constraint firstItem="0Qm-aN-EVV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DCI-ot-IS6"/>
+                <constraint firstAttribute="bottom" secondItem="uyt-HQ-4v4" secondAttribute="bottom" id="KcS-MP-SFv"/>
+                <constraint firstItem="uyt-HQ-4v4" firstAttribute="top" secondItem="0Qm-aN-EVV" secondAttribute="bottom" id="Pwb-NE-oZi"/>
+                <constraint firstAttribute="trailing" secondItem="uyt-HQ-4v4" secondAttribute="trailing" id="VMM-iI-D1E"/>
+                <constraint firstItem="0Qm-aN-EVV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="c3E-oo-O9u"/>
+                <constraint firstAttribute="trailing" secondItem="0Qm-aN-EVV" secondAttribute="trailing" id="m6Q-ZG-ABG"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_add" width="24" height="24"/>
+    </resources>
+</document>

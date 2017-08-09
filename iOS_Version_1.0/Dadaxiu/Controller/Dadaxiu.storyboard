@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--搭搭秀-->
+        <scene sceneID="m5L-cR-WKG">
+            <objects>
+                <navigationController storyboardIdentifier="Nav" id="aE4-Zk-Wg8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="搭搭秀" image="Home_icon_tab_default" selectedImage="Home_icon_tab" id="4VC-BD-l7M"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBq-Bn-N7N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gun-91-eDi" kind="relationship" relationship="rootViewController" id="uh5-RN-ajh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLf-cj-cSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="-449"/>
+        </scene>
+        <!--Daxiu View Controller-->
+        <scene sceneID="ghO-Z5-m0v">
+            <objects>
+                <viewController id="Gun-91-eDi" customClass="DaxiuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z7D-RO-hIl"/>
+                        <viewControllerLayoutGuide type="bottom" id="DCf-EG-EaW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B7x-t3-j4v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z1B-Jd-BQQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6d9-EA-wAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="-449"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_icon_tab" width="25" height="25"/>
+        <image name="Home_icon_tab_default" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="LogistCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7O0-fD-jds">
+                        <rect key="frame" x="15" y="10" width="290" height="100.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKL-Mh-W5t">
+                                <rect key="frame" x="12" y="12" width="80" height="76"/>
+                                <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="FEI-tt-dOV"/>
+                                    <constraint firstAttribute="width" constant="80" id="PBw-fi-FCP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单已发货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz8-Ig-nNY">
+                                <rect key="frame" x="100" y="12" width="178" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.2196078431372549" green="0.73333333333333328" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新春新款新春新款新春新款新春新款新春新款新春新款" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hab-uC-ohn">
+                                <rect key="frame" x="100" y="42" width="178" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运单编号：1234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-bu-2fZ">
+                                <rect key="frame" x="100" y="79.5" width="178" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mKL-Mh-W5t" firstAttribute="top" secondItem="7O0-fD-jds" secondAttribute="top" constant="12" id="1WG-ZU-snn"/>
+                            <constraint firstItem="mKL-Mh-W5t" firstAttribute="leading" secondItem="7O0-fD-jds" secondAttribute="leading" constant="12" id="CDf-Sh-Zbz"/>
+                            <constraint firstItem="Hab-uC-ohn" firstAttribute="leading" secondItem="uz8-Ig-nNY" secondAttribute="leading" id="HAE-Pq-B7G"/>
+                            <constraint firstItem="Hab-uC-ohn" firstAttribute="trailing" secondItem="uz8-Ig-nNY" secondAttribute="trailing" id="IoX-th-x9e"/>
+                            <constraint firstItem="uz8-Ig-nNY" firstAttribute="leading" secondItem="mKL-Mh-W5t" secondAttribute="trailing" constant="8" id="Nif-mJ-4AW"/>
+                            <constraint firstItem="y6I-bu-2fZ" firstAttribute="trailing" secondItem="uz8-Ig-nNY" secondAttribute="trailing" id="R1M-rM-oHY"/>
+                            <constraint firstItem="uz8-Ig-nNY" firstAttribute="top" secondItem="mKL-Mh-W5t" secondAttribute="top" id="T3I-PF-efe"/>
+                            <constraint firstItem="y6I-bu-2fZ" firstAttribute="top" secondItem="Hab-uC-ohn" secondAttribute="bottom" constant="6" id="Y2k-SY-CEL"/>
+                            <constraint firstItem="y6I-bu-2fZ" firstAttribute="leading" secondItem="uz8-Ig-nNY" secondAttribute="leading" id="bIp-un-HMD"/>
+                            <constraint firstItem="Hab-uC-ohn" firstAttribute="top" secondItem="uz8-Ig-nNY" secondAttribute="bottom" constant="12" id="cei-lN-COO"/>
+                            <constraint firstAttribute="trailing" secondItem="uz8-Ig-nNY" secondAttribute="trailing" constant="12" id="dcI-BC-724"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7O0-fD-jds" secondAttribute="bottom" constant="10" id="3XL-1S-L7u"/>
+                    <constraint firstItem="7O0-fD-jds" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Z5f-Uy-44Q"/>
+                    <constraint firstItem="7O0-fD-jds" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kll-lu-a1s"/>
+                    <constraint firstAttribute="trailing" secondItem="7O0-fD-jds" secondAttribute="trailing" constant="15" id="ppw-P0-dWB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="7O0-fD-jds" id="kQv-t7-eni"/>
+                <outlet property="orderLabel" destination="Hab-uC-ohn" id="28e-aN-Cax"/>
+                <outlet property="orderNumabel" destination="y6I-bu-2fZ" id="Up8-Ut-bOq"/>
+                <outlet property="orderTypeLabel" destination="uz8-Ig-nNY" id="uMw-A8-SDz"/>
+                <outlet property="picIMGView" destination="mKL-Mh-W5t" id="ye3-MP-cYk"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="64.5"/>
+        </tableViewCell>
+    </objects>
+</document>
